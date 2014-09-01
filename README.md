@@ -17,7 +17,7 @@ PHP Calculadora
     <option selected="selected"> Somar </option>
     <option> Subtrair </option>
     <option> Multiplicar </option>
-    <option> Divir </option>
+    <option> Dividir </option>
     </select>
     
     Valor2: <input type="text" name="valor2" size="5" />
