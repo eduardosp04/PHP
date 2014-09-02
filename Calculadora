@@ -3,13 +3,14 @@ PHP
 
 PHP Calculadora
 
+ ARQUIVO INDEX.PHP
 <html>
 <head>
   <title> Calculadora </title>
 </head>
 <body>
 
-    <form method="post">
+    <form method="post" action="codigo.php">
     
     Valor1: <input type="text" name="valor1" size="5" />
     
@@ -24,16 +25,18 @@ PHP Calculadora
     <input type="submit" name="calcular" value="calcular" />
     </form>
     
+    ARQUIVOR CODIGO.PHP
+    
     <?php
       $valor1 = $_POST['valor1'];
       $valor2 = $_POST['valor2'];
       $tipo = $_POST['tipo'];
       
       switch($tipo){
-          case="Somar": $resultado = $valor1 + $valor2; break;
-          case="Subtrair": $resultado = $valor1 - $valor2; break;
-          case="Multiplicar": $resultado = $valor1 * $valor2; break;
-          case="Dividir": $resultado = $valor1 / $valor2; break;
+          case"Somar": $resultado = $valor1 + $valor2; break;
+          case"Subtrair": $resultado = $valor1 - $valor2; break;
+          case"Multiplicar": $resultado = $valor1 * $valor2; break;
+          case"Dividir": $resultado = $valor1 / $valor2; break;
       }
       
           echo("RESULTADO: ".$resultado);
