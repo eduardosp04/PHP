@@ -1,0 +1,7 @@
+<?php 
+   if(!ISSET($_REQUEST['page'])):
+   
+   else:
+    include($_REQUEST['page'].".php");
+   endif;
+  ?>
